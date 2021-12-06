@@ -64,3 +64,7 @@ function form_check() {
 function id_search() {
   window.open("search_id.html", "", "width=600, height=250, left=0, top=0");
 }
+
+function add_search() {
+  window.open("search_addr.html", "", "width=600, height=250, left=0, top=0");
+}
