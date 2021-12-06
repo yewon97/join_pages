@@ -3,7 +3,6 @@ function form_check() { // form요소 submit 전 유효성 검사
   let u_id = document.getElementById("u_id");
   let pwd = document.getElementById("pwd");
   let repwd = document.getElementById("repwd");
-  let mobile = document.getElementById("mobile");
   let agree = document.getElementById("agree");
   
   function red_err_txt() { 
