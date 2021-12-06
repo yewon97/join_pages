@@ -17,6 +17,7 @@
     form p span {
       font-size: 13px;
       color: rgb(0, 60, 255);
+      font-style: italic;
     }
     form .final_btn {
       text-align: center;
@@ -24,12 +25,13 @@
   </style>
 </head>
 <body>
-  <form name="join_form" action="" method="post">
+  <form name="join_form" action="" method="get" id="join_form">
     <fieldset>
       <legend>회원가입</legend>
       <p>
         <label for="u_name">이름</label>
         <input type="text" name="u_name" id="u_name">
+        <span class="err_name"></span>
       </p>
       <p>
         <label for="u_id">아이디</label>
@@ -89,8 +91,8 @@
         <span class="err_agree">* 필수</span>
       </p>
       <p class="final_btn">
-        <button type="button">이전으로</button>
-        <button type="submit">회원가입</button>
+        <button type="button" class="btn">이전으로</button>
+        <button type="submit" class="btn">회원가입</button>
       </p>
     </fieldset>
   </form>
