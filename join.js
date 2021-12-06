@@ -1,11 +1,12 @@
-function form_check() { // form요소 submit 전 유효성 검사
+function form_check() {
+  // form요소 submit 전 유효성 검사
   let u_name = document.getElementById("u_name");
   let u_id = document.getElementById("u_id");
   let pwd = document.getElementById("pwd");
   let repwd = document.getElementById("repwd");
   let agree = document.getElementById("agree");
-  
-  function red_err_txt() { 
+
+  function red_err_txt() {
     err_txt.style.color = "red";
   }
 
@@ -58,4 +59,8 @@ function form_check() { // form요소 submit 전 유효성 검사
     agree.focus();
     return false;
   }
+}
+
+function id_search() {
+  window.open("search_id.html", "", "width=600, height=250, left=0, top=0");
 }
