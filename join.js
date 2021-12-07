@@ -54,6 +54,13 @@ function form_check() {
     repwd.focus();
     return false;
   }
+  var reg_mobile = /^[0-9]{10,11}$/g;
+  if (!reg_mobile.test(mobile.value)) {
+    var err_txt = document.querySelector(".err_mobile");
+    err_txt.textContent = "전화번호는 숫자만 입력할 수 있습니다.";
+    mobile.focus();
+    return false;
+  }
   if (!agree.checked) {
     alert("약관 동의가 필요합니다.");
     agree.focus();
