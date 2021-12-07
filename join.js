@@ -57,6 +57,7 @@ function form_check() {
   var reg_mobile = /^[0-9]{10,11}$/g;
   if (!reg_mobile.test(mobile.value)) {
     var err_txt = document.querySelector(".err_mobile");
+    red_err_txt();
     err_txt.textContent = "전화번호는 숫자만 입력할 수 있습니다.";
     mobile.focus();
     return false;
