@@ -72,7 +72,7 @@
           <label for="email_id">이메일</label>
           <input type="text" name="email_id" id="email_id" /> @
           <input type="text" name="email_dns" id="email_dns" />
-          <select name="email_sel" id="email_sel">
+          <select name="email_sel" id="email_sel" onchange="document.getElementById('email_dns').value = this.options[this.selectedIndex].value">
             <option value="">직접 입력</option>
             <option value="naver.com">NAVER</option>
             <option value="hanmail.net">DAUM</option>
